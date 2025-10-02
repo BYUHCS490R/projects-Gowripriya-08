@@ -1,0 +1,33 @@
+body {
+    background-color: #F2E2D2;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    font-style: italic;
+    color: black;
+}
+#firstpriya {
+    background-color: gray;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    color: black;
+}
+header h1 {
+    background-color: cadetblue;
+}
+h3 {
+    color: chocolate;
+    background-color: coral;
+}
+.darker {
+    font-weight: bolder;
+    font-style: initial;
+}
+.palu {
+    color: cadetblue;
+}
+.moga {
+    color: coral;
+}
+.darker {
+    color: black;
+}
