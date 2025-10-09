@@ -11,14 +11,24 @@ body {
   background-attachment: fixed;
   background-size: auto, 120px;
 }
+.flag {
+
+  position: fixed; /* stays on screen even when scrolling */
+  top: 30px;
+  right: 30px;     /* position on top-right */
+  width: 120px;
+  border-radius: 50%;
+  z-index: 10;     /* ensures it appears above other elements */
+}
+
 
 /* ---------- HEADER ---------- */
 header {
-  background-color: #ff9933; /* Indian flag saffron */
-  color: white;
+  background-color: transparent; /* Indian flag saffron */
+  color: transparent;
   text-align: center;
   padding: 25px 0;
-  border-bottom: 5px solid #138808; /* Indian flag green */
+  border-bottom: 5px solid transparent; /* Indian flag green */
 }
 
 header h1 {
@@ -39,7 +49,7 @@ nav li {
 }
 
 nav a {
-  color: white;
+  color: rgb(23, 15, 2);
   text-decoration: none;
   font-weight: bold;
   padding: 6px 10px;
@@ -55,8 +65,8 @@ nav a:hover {
 
 /* Highlight current page link */
 nav a.current {
-  background-color: #ffffff;
-  color: #138808;
+  background-color: transparent;
+  color: green;
   border: 2px solid #ff9933;
 }
 
@@ -72,7 +82,7 @@ main {
   padding: 30px;
   max-width: 900px;
   margin: 20px auto;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: transparent;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
@@ -128,4 +138,7 @@ img {
   main {
     padding: 20px;
   }
+}
+h1 {
+  color: black;
 }
