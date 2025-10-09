@@ -1,0 +1,131 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #222;
+
+  /* Background setup */
+  background-image: 
+    url("india gate.jpg"),       /* Main background image */
+    url("indiaflag.jpg");        /* Small decorative image */
+  background-repeat: repeat, no-repeat;
+  background-position: center, top right;
+  background-attachment: fixed;
+  background-size: auto, 120px;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  background-color: #ff9933; /* Indian flag saffron */
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+  border-bottom: 5px solid #138808; /* Indian flag green */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2em;
+}
+
+/* ---------- NAVIGATION ---------- */
+nav ul {
+  list-style-type: none; /* cleaned default bullets */
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect */
+nav a:hover {
+  background-color: #ffcc66;
+  color: #222;
+}
+
+/* Highlight current page link */
+nav a.current {
+  background-color: #ffffff;
+  color: #138808;
+  border: 2px solid #ff9933;
+}
+
+/* ---------- PARAGRAPHS ---------- */
+p {
+  font-size: 12pt;
+  color: rgb(33, 1, 7);
+  line-height: 1.6;
+}
+
+/* ---------- MAIN CONTENT ---------- */
+main {
+  padding: 30px;
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+main h2, main h3 {
+  color: #ff6600;
+  text-align: center;
+}
+
+/* ---------- TOUR LIST ---------- */
+.tour-list {
+  list-style-image: url("star bulletin.jpg");
+  margin-left: 40px;
+  line-height: 1.8;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background-color: #03045e;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9em;
+  margin-top: 20px;
+}
+
+footer .author {
+  font-weight: bold;
+  color: #ffd60a;
+}
+
+#year {
+  font-style: italic;
+}
+
+/* ---------- IMAGES ---------- */
+img {
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  margin: 10px auto;
+  display: block;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 700px) {
+  nav li {
+    display: block;
+    margin: 8px 0;
+  }
+
+  main {
+    padding: 20px;
+  }
+}
