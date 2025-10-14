@@ -1,0 +1,43 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 100px; /* move content below our navigation */
+
+}
+.campus {
+    border: thin solid chocolate;
+    width: 100px;
+    float: right;
+
+}
+nav {
+    display: inline;
+    padding: 20px;
+    background-color: aqua;
+    border-bottom: thick solid white;
+    text-decoration:none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+/*.hammer {
+    position: relative;
+    top: 30px;
+}
+    */
+.hammer {
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    margin: 0;
+    z-index: 10;
+    display: none;
+}
+ .campusimg {
+    width: 100%;
+ }
+ .stop{
+    clear: both;
+ }
+ .floater {
+    float: left;
+ }
