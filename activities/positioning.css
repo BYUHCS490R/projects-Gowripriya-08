@@ -10,14 +10,16 @@ body {
 
 }
 nav {
-    display: inline;
+    display: inline-block;
     padding: 20px;
     background-color: aqua;
     border-bottom: thick solid white;
     text-decoration:none;
+    
 }
 nav a:hover {
     text-decoration: underline;
+    margin: 10%;
 }
 /*.hammer {
     position: relative;

@@ -1,0 +1,61 @@
+body {
+    background-image: url('demonslayer1.jpg');
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#wrapper {
+    background-color: rgb(219, 202, 180);
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    
+}
+.palu {
+    background-color: rgb(156, 123, 123);
+    text-align: center;
+     text-decoration: underline;
+     font-size: 40px;
+     font-weight: bold;
+    line-height: normal;
+     margin-top: 50px;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 5px black;
+    padding: 20px;
+    border: thin solid rgb(44, 44, 52);
+    box-shadow: 0 0 100px black ;
+    
+
+}
+
+nav a {
+    margin: 0 10px;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(179, 151, 115);
+    box-shadow: 0 0 20px ;
+}
+.amma {
+    float: left;
+    border: thick solid rgb(48, 48, 50);
+    width: auto; 
+    text-align: center;
+}
+.demon {
+    background-color: antiquewhite;
+    background-image: url('footer4.jpg');
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-top: 3px solid black;
+    width: 750px;
+    font-style: italic;
+    background-origin: content-box;
+    background-clip: border-box;
+
+
+}
