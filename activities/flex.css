@@ -1,0 +1,39 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+.card {
+    border: thin solid black;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: -5px -5px 3px royalblue;
+    width: 200px;
+    
+}
+nav a {
+    display: block;
+    padding: 10px;
+    background-color: aquamarine;
+    color: rgb(40, 36, 31);
+    width: 150px;
+}
+nav a:hover {
+    color: blue;
+    background-color: aliceblue;
+    text-decoration: underline;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+.mainthing {
+    order: -2;
+}
+.row {
+    display: flex;
+    flex-flow: row wrap;
+
+    /*flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px; we can combine both */
+    flex-wrap: wrap;
+}
