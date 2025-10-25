@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+header {
+    background-color: rgb(225, 163, 70);
+    color: whitesmoke;
+}
+.sidebar {
+    margin: 0;
+}
+main h2 {
+    color: rgb(166, 166, 46);
+    margin: 0;
+
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+background-color: black;
+}
+ nav a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    background-color: bisque;
+    color: blueviolet;
+
+ }
+ nav a:hover {
+    color: black;
+    background-color: aquamarine;
+
+
+ }
+ artice {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+.parent {
+    display: flex;
+}
+.card {
+    border: thin solid black ;
+    box-shadow: 3px 3px 5px green;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+}
+.card img {
+    width: 100%;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
