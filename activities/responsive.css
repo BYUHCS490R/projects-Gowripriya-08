@@ -16,6 +16,7 @@ main h2 {
 }
 nav {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
 background-color: black;
 }
@@ -53,4 +54,27 @@ background-color: black;
 .row {
     display: flex;
     flex-wrap: wrap;
+}
+nav {
+    flex-direction: column;
+}
+@media ONLY screen AND (max-width:500px) {
+    body {
+        background-color: rgb(95, 141, 169);
+    }
+
+    nav {
+        flex-direction:column;
+    }
+    .parent {
+        flex-direction: column-reverse;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    main-card {
+        order: -1;
+    }
+
+
 }
