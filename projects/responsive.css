@@ -67,7 +67,7 @@ nav {
         flex-direction:column;
     }
     .parent {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     .sidebar {
         width: 100%;
