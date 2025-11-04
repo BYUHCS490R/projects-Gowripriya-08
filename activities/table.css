@@ -1,0 +1,25 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.schedule {
+    border: thin solid black;
+    
+    border: spacing 5px;;
+    border-collapse:separate;
+    caption-side: top;
+    width: 100%;
+    margin: auto;
+    background-color: rgb(153, 153, 216);
+}
+
+.schedule th, .schedule td {
+     border: 5px solid black;
+     padding: 5px;
+     height: 30px;
+     width: 10px;
+     background-color: aquamarine;
+
+}
+.num {
+    vertical-align: middle;
+}

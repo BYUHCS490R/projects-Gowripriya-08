@@ -1,0 +1,27 @@
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}.schedule {
+    border-spacing: 0px;
+    border-collapse:collapse;
+}
+.schedule thead tr {
+    background-color: blue;
+    color: white;
+    border: thick solid black;
+}
+.schedule tfoot tr {
+    background-color: blue;
+    color: white;
+}
+.schedule tbody tr :nth-child(even) {
+    background-color: aquamarine;
+
+}
+.schedule tbody tr :nth-child(odd) {
+    background-color: rgb(48, 138, 21);
+}
+
+.num {
+    vertical-align: middle;
+}

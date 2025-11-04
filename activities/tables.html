@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>table</title>
+    <link rel="stylesheet" href="table.css">
 </head>
 <body>
     <header>
@@ -17,7 +18,7 @@
     </nav>
     <main>
         <h1>tables</h1>
-        <table border="1">
+        <table class="schedule">
            <thead> <tr>
                 <th>Department</th>
                 <th>number</th>
@@ -41,7 +42,7 @@
             </tr>
             <tr>
                 
-                <td rowspan="2">spicy</td>
+                <td rowspan="2" class="num">spicy</td>
                 <td>salty</td>
                 <td>sour</td>
                 <td>crispy</td>
@@ -88,13 +89,11 @@
 
         </table>
       
-        <h3>When do you use a table?</h3>
-        <p>Use a table when you need to show data that’s organized in rows and columns like schedules, prices, or comparisons.</p>
-        <h3>When do you not use a table?</h3>
-        <p>Don’t use a table just to arrange or format text or images on a page,use CSS for layout instead.</p>
-        <h3>When do you need to do extra work for table accessibility?</h3>
-        <p>Do extra accessibility work when our table has complex headers or spans multiple rows/columns—add proper header tags and descriptions so screen readers can understand it.</p>
-        
+        <h3>Why don't we use the border attribute?</h3>
+        <p>We don’t use the border attribute because it’s outdated HTML; instead, we use CSS for more control and better styling.</p>
+        <h3>What is the easiest way to color every other row a different color?
+ </h3>
+ <p>The easiest way to color every other row is by using the CSS :nth-child(even) or :nth-child(odd) selector.</p>
     </main>
     <footer>
         &copy;Gowri Priya 2025
