@@ -1,0 +1,109 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+
+    
+}
+header h1 {
+    background-color: rgb(126, 184, 126);
+    color: rgb(24, 23, 23);
+    border: thick solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(6, 5, 5);
+     padding: 20px;
+     text-align: center;
+     margin: 0px;
+}
+nav {
+     background-color: rgb(118, 136, 123);
+     display: flex;
+     flex-direction:row;
+    justify-content: space-around;
+    border: thin solid black;
+}
+nav a {
+    display: block;
+    padding: 5px;
+    color: rgb(28, 21, 35);
+ }
+ nav a:hover {
+    color: white;
+    background-color: darkslategrey;
+    }
+    
+ .friends {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0;
+    padding: 0;
+    
+ 
+}
+.sidebar {
+    width: 250px;
+
+    
+}
+
+.table {
+    border: 5px solid black;
+    border-spacing: 3px;
+    border-collapse: separate;
+    caption-side: top;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    height: 30px;
+    background-color:#ffebb7;
+
+
+}
+.table th, .table td {
+    border: 3px solid black;
+    padding: 5px;
+    height: 20px;
+    width: 10px;
+    
+
+}
+main h3 {
+    margin: 10px;
+    padding: 10px;
+}
+img {
+    border: thick solid black;
+}
+.table thead tr { 
+    background-color:  #43501c;
+    color: white;
+
+}
+.table tfoot tr {
+    background-color:  #1b1c25;
+    color: white;
+}
+.table tbody tr:nth-child(even) {
+    background-color: #7b7e84;
+    color: white;
+}
+.table tbody tr:nth-child(odd) {
+    background-color:#0b3d2e ;
+    color: white;
+}
+.num {
+    vertical-align: middle;
+}
+@media only screen and (max-width:600px) {
+    body {
+        background-color: cornsilk;
+    }
+     nav {
+        flex-direction:column;
+    }
+    .friends {
+      flex-direction: column-reverse;
+     }
+   .sidebar {
+        width: 100%;
+    }
+
+    }

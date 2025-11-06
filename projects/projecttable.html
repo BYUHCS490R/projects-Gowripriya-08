@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project table</title>
+    <link rel="stylesheet" href="projecttable.css">
+</head>
+<body>
+    <header>
+        <h1>My Friends</h1>
+        <nav>
+            <a href="#">vinay</a>
+            <a href="#">anunaya</a>
+            <a href="#">Arinola</a>
+            <a href="#">pavani</a>
+            <a href="#">prasanna</a>
+        </nav>
+    </header>
+    <main>
+        <div class="friends">
+        <div class="sidebar">
+            <h3>Best People in my life</h3>
+            <figure><img src="friends.jpg" alt="friends"><figcaption>All of my eyes in one picture</figcaption></figure>
+            <ul>
+                <li>1st pic is Arinola</li>
+                <li>2nd is anunaya,vinay,arinola</li>
+                <li>Me and Vinay</li>
+                <li>Me and Prasanna</li>
+                <li>Me and anunaya and her boyfriend </li>
+                <li>Me and pavani</li>
+            </ul>
+        </div>
+        <table class="table">
+            <caption>My Best Freinds and their details</caption>
+         <thead>
+            <tr>
+                <th>Names</th>
+                <th>Age</th>
+                <th>Lasting</th>
+                <th>How we meet</th>
+            </tr>
+             </thead>
+            <tbody>
+             <tr>
+                <th colspan="4">Meet in Missionary Work</th>
+                </tr>
+                <tr>
+                <td>Vinay</td>
+                <td>28</td>
+                <td>3 years</td>
+                <td>Home ward</td>
+                </tr>
+             
+             <tr>
+                <td>anunaya</td>
+                <td rowspan="2" class="num">27</td>
+                <td>5 years</td>
+                <td>Mission companion</td>
+             </tr>
+             <tr>
+             <td>Arinola</td>
+             
+             <td>2 years</td>
+             <td>Mutual friend</td>
+             </tr>
+             <tr>
+             <th colspan="4">Meet in Life</th>
+             </tr>
+             <tr>
+                <td>Pavani</td>
+                <td>22</td>
+                <td>12</td>
+                <td>High school</td>
+             </tr>
+             <tr>
+             <td>Prasanna</td>
+             <td>24</td>
+             <td>22</td>
+             <td>Sibling</td>
+             </tr>
+            </tbody>
+             <tfoot>
+                <tr>
+             <th colspan="3" id="total-bestfriends">Total best Friends</th>
+             <td headers="total-bestfriends">5</td>
+             </tr>
+            </tfoot>
+       </table>
+       </div>
+
+    </main>
+    <footer>
+        &copy;Gowri priya mogali 2025
+    </footer>
+
+    
+</body>
+</html>
