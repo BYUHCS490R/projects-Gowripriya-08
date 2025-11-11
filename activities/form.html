@@ -19,17 +19,21 @@
         </nav>
     <main><h1>Forms</h1>
     <form action="CssGrid.html" method="post">
-        <div>
+        <fieldset>
+            <legend>Sign up</legend>
+        <div class="form-row">
        <label for="fname">Full Name:</label> <input type="text" name="fullname"placeholder="full name" id="fname">
         </div>
-        <div>
+        <div  class="form-row">
        <label for="fname">Email:</label> <input type="email" name="email"placeholder="yourmail@gmail.com" id="email">
         </div>
          
-         <div>
-        Password :<input type="password" name="password" id="pass">
+         <div  class="form-row">
+            <label for="Password">password:</label>
+         <input type="password" name="password" id="pass">
         </div>
-        <div>
+       
+        <div  class="form-row">
             <label for="state">state</label>
             <select name="state" id="state">
                 <option value="blank">-----</option>
@@ -38,27 +42,26 @@
                 <option value="HI" selected>Hawaii</option>
             </select>
         </div>
-        <div>
+        <div  class="check-row">
+              <div class="spacer"></div>
             <label><input type="checkbox"> I agree to the terms and conditions</label>
         </div>
-        <div>
-            Gender
+        <div  class="check-row">
+            <div class="spacer">Gender:</div>
            <label> <input type="radio" name="Gender" value="female">female</label>
              <label> <input type="radio" name="Gender" value="Male">male</label>
         </div>
-        <div>
+        <div class="form-row">
             <label for="comment">comments</label>
             <textarea name="comment" id="comment">Hello</textarea>
         </div>
-        <input type="submit" value="sign Up">
+        <div class="form-row">
+            <div class="spacer"></div>
+         <input type="submit" value="sign Up">
+        </div>
+         </fieldset>
     </form>
-<p>what is action?</p>
-<p>action is the page that takes us to the other website</p>
-<p>what is method ?</p>
-<p> Method is the way we keep things</p>
-<p></p>
-<p>Post means change, we can add, update or we can rempve or delete some sorted of data</p>
-<p>with get request we just read data we wont do anything, example like google, youtube</p></main>
+<p>Flexbox helps you create flexible and responsive form layouts by allowing elements to adjust automatically based on screen size. On desktop, you can align items horizontally, and on mobile, you can stack them vertically without much extra code.</p></main>
     <footer>
         &copy;Gowripriya mogali
     </footer>

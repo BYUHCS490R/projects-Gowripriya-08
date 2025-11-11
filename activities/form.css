@@ -1,0 +1,55 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ebde9e;
+}
+.form-row {
+    display: flex;
+    gap:10px;
+    margin: 15px 0;
+}
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+.spacer {
+    width: 150px;
+    text-align: right;
+}
+.form-row input:not([type='sudmit']):focus,.form-row select:focus, .form-row textarea {
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(94, 168, 229);
+}
+.form-row input:not([type='sudmit']):focus,.form-row select:focus, .form-row textarea:focus {
+    background-color: white;
+}
+.form-row input[type='sudmit']  {
+    background-color: rgb(160, 130, 92);
+    color: rgb(66, 58, 73);
+    padding: 5px;
+    border-radius: 5px 5px;
+}
+
+.check-row {
+    display: flex;
+    gap: 10px;
+}
+fieldset {
+    margin: auto;
+    background-color: rgb(169, 96, 96);
+    width: 80%;
+}
+legend {
+    background-color: rgb(174, 175, 76);
+    color: aliceblue;
+    padding: 20px;
+}
+@media ONLY screen AND (max-width:480px) {
+    .form-row, .check-row {
+        flex-direction: column;
+    }
+    .form-row label, .spacer {
+        text-align: left;
+    }
+}
