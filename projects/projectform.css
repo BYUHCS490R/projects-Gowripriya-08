@@ -1,0 +1,109 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(232, 239, 245);
+}
+header h1 {
+    background-color: rgb(114, 157, 158);
+    border: thick solid black;
+    border-radius: 5px 5px ;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px black;
+    text-align: center;
+
+}
+main h3 {
+    text-align: center;
+    border: thin solid black;
+    background-color: rgb(239, 242, 244);
+    border-radius: 5px;
+    box-shadow: 5px 5px black;
+}
+footer {
+    background-color: rgb(120, 166, 166);
+    border: thin solid black;
+    border: 5px;
+    box-shadow: 5px 5px 5px black;
+    font-style: italic;
+}
+.love-you {
+    display: flex;
+    margin: 20px 0px 20px 0;
+    gap: 10px;
+    
+}
+.love-you label {
+    text-align: right;
+    width: 150px;
+}
+.dating {
+     width: 150px;
+    text-align:right;
+
+}
+.hate-you {
+    display: flex;
+    gap: 10px;
+    
+}
+.hate-you label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+fieldset {
+    background-color:#201f2e;
+    color: white;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    border: thick solid black;
+    border-radius: 10px 10px 10px;
+    box-shadow: 5px 5px rgb(11, 11, 11);
+}
+legend {
+    text-align: right;
+    border: thin solid black;
+    background-color: rgb(85, 134, 159);
+    color: black;
+    padding: 10px;
+
+}
+.love-you input[type='submit'] {
+    background-color: rgb(85, 134, 159);
+    padding: 10px;
+    border-radius: 5px;
+    border: thick solid rgb(65, 73, 92);
+}
+.love-you input:not([type='submit']) {
+    background-color: rgb(137, 185, 169) ;
+    padding: 10px;
+     border-radius: 8px;
+     box-shadow: 5px 5px black;
+    font-style: italic;
+}
+.love-you input:not([type='submit']):focus,.love-you select, .love-you textarea {
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(137, 185, 169);
+}
+.love-you input:not([type='submit']):focus,.love-you select:focus, .love-you textarea:focus {
+    background-color: white;
+}
+@media only screen and (max-width:500px) {
+    .love-you, .hate-you {
+        flex-direction: column;
+    }
+    .love-you label, .dating {
+        text-align: left;
+    }
+    .love-you input[type='submit'] {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+    }
+    
+}
+
