@@ -26,6 +26,7 @@ footer {
     box-shadow: 5px 5px 5px black;
     font-style: italic;
 }
+
 .love-you {
     display: flex;
     margin: 20px 0px 20px 0;
@@ -44,7 +45,8 @@ footer {
 .hate-you {
     display: flex;
     gap: 10px;
-    
+    margin: 5px;
+    accent-color:#007bff;
 }
 .hate-you label {
   display: flex;

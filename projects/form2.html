@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="formproject.css">
+</head>
+<body>
+    <header>
+        <h1>Registration Form</h1>
+    </header>
+    <main>
+    <form action="test.html" method="post">
+      <div class="form-row">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Full Name">
+      </div>
+      <div class="form-row">
+        <label for="username">User Name:</label>
+        <input type="text" id="username" name="username" placeholder="User Name">
+      </div>
+      <div class="form-row">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com">
+      </div>
+      <div class="form-row">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter Password">
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <div class="phone-wrapper">
+          <select id="countryCode" name="countryCode">
+            <option value="">Select</option>
+            <option value="+1">+1 US</option>
+            <option value="+44">+44 UK</option>
+            <option value="+61">+61 AU</option>
+            <option value="+81">+81 JP</option>
+            <option value="+86">+86 CH</option>
+            <option value="+91">+91 IN</option>
+          </select>
+          <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" id="dob" >
+      </div>
+      <div class="form-row">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="99">
+      </div>
+      <fieldset>
+        <legend>Gender:</legend>
+        <label><input type="radio" name="gender" value="male" required> Male</label>
+        <label><input type="radio" name="gender" value="female" required> Female</label>
+        <label><input type="radio" name="gender" value="other" required> Other</label>
+      </fieldset>
+      <div class="form-row">
+        <label for="country">Country:</label>
+        <select name="country" id="country" >
+          <option value="">Select</option>
+          <option value="US">USA</option>
+          <option value="IN">India</option>
+          <option value="JP">Japan</option>
+          <option value="AU">Australia</option>
+          <option value="CN">China</option>
+          <option value="UK">UK</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="state">State:</label>
+        <select id="state" name="state">
+          <option value="">Select</option>
+          <option>Hawaii</option>
+          <option>California</option>
+          <option>Texas</option>
+          <option>Florida</option>
+          <option>England</option>
+          <option>Scotland</option>
+          <option>Northern Ireland</option>
+          <option>Victoria</option>
+          <option>Queensland</option>
+          <option>New South Wales</option>
+          <option>Osaka</option>
+          <option>Tokyo</option>
+          <option>Kyoto</option>
+          <option>Beijing</option>
+          <option>Shanghai</option>
+          <option>Sichuan</option>
+          <option>Andhra Pradesh</option>
+          <option>Telangana</option>
+          <option>Karnataka</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="favcolor">Favorite Color:</label>
+        <input type="color" id="favcolor" name="favcolor" value="#000000">
+      </div>
+      <div class="form-row">
+        <label for="month">Month of Registration (MM-YYYY):</label>
+       <input type="month" id="month" name="month">
+      </div>
+
+      <div class="form-row">
+        <label for="range">Select Range (18–99):</label>
+        <input type="range" id="range" name="range" min="18" max="99">
+      </div>
+
+      <div class="form-row">
+        <label for="bio">Description about you:</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Write a short description..."></textarea>
+      </div>
+      <fieldset>
+        <legend>Terms</legend>
+        <label><input type="checkbox" name="agree" required> I agree to the terms and conditions</label>
+      </fieldset>
+      <div class="form-group submit">
+        <input type="submit" value="Register">
+      </div>
+    </form>
+  </main>
+    <footer>
+        &copy;vinay Palaparthi 2025
+    </footer>
+</body>
+</html>
