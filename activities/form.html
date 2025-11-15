@@ -18,19 +18,19 @@
                <a href="#">link</a>
         </nav>
     <main><h1>Forms</h1>
-    <form action="CssGrid.html" method="post">
+    <form action="CssGrid.html" method="post" id="myform">
         <fieldset>
             <legend>Sign up</legend>
         <div class="form-row">
-       <label for="fname">Full Name:</label> <input type="text" name="fullname"placeholder="full name" id="fname">
+       <label for="fullname">Full Name:</label> <input type="text" name="fullname"placeholder="fullname" id="fullname">
         </div>
         <div  class="form-row">
-       <label for="fname">Email:</label> <input type="email" name="email"placeholder="yourmail@gmail.com" id="email">
+       <label for="email">Email:</label> <input type="email" name="email"placeholder="yourmail@gmail.com" id="email">
         </div>
          
          <div  class="form-row">
             <label for="Password">password:</label>
-         <input type="password" name="password" id="pass">
+         <input type="password" name="password" id="password">
         </div>
        
         <div  class="form-row">
@@ -52,6 +52,10 @@
              <label> <input type="radio" name="Gender" value="Male">male</label>
         </div>
         <div class="form-row">
+            <label for="age">age</label>
+            <input type="number" name="age" id="age">
+        </div>
+        <div class="form-row">
             <label for="comment">comments</label>
             <textarea name="comment" id="comment">Hello</textarea>
         </div>
@@ -61,9 +65,47 @@
         </div>
          </fieldset>
     </form>
-<p>Flexbox helps you create flexible and responsive form layouts by allowing elements to adjust automatically based on screen size. On desktop, you can align items horizontally, and on mobile, you can stack them vertically without much extra code.</p></main>
+ <p>1. What is JavaScript? How did it get its name?</p>
+<p>JavaScript is a programming language used mainly to make webpages interactive. It was named “JavaScript” for marketing purposes to ride on the popularity of Java, even though the two languages are not closely related.</p>
+<p>What are the two ways you can run JavaScript?</p>
+<p>You can run JavaScript in the browser (client-side) or on a server using environments like Node.js (server-side).</p>
+<p>What was the most popular front-end JS library?</p>
+<p>For many years, jQuery was the most popular front-end JavaScript library.</p>
+<p>What is the most popular front-end JS library today?</p>
+<p>today, React is the most popular front-end JavaScript library.</p></main>
     <footer>
         &copy;Gowripriya mogali
     </footer>
+    <script>
+        document.getElementById('myform').addEventListener('submit',function(event) {
+            event.preventDefault();
+
+            const fullname = document.getElementById('fullname').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const age = document.getElementById('age').value;
+            
+            if (!fullname || !email) {
+                alert("you need a name and email.")
+                return;
+            }
+
+            if (!age || ! age <18) {
+                alert ("you need to be 18.")
+                return
+            }
+
+            const formData = {
+                name: fullname,
+                email: email,
+                password: password,
+                age: age
+            };
+            alert("form submitted");
+            console.log(formData);
+        });
+
+        
+    </script>
 </body>
 </html>
