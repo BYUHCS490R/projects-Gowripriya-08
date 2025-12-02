@@ -1,0 +1,314 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+       background-image: url(bc3.jpg); 
+  background-repeat: repeat, no-repeat;
+  background-position: center, top right;
+  background-attachment: fixed;
+  background-size: auto, 120px;
+}
+header h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    border: thin solid black;
+    border-radius: 5px 5px 5px;
+    box-shadow: 5px 5px black;
+    background-color: rgb(95, 150, 116);
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    
+}
+nav {
+     background-color: rgb(187, 114, 36);
+     display: flex;
+     flex-direction:row;
+    justify-content: space-around;
+    border: thin solid black;
+    box-shadow: 5px 5px black;
+    border-radius: 5px 5px;
+}
+main h3 {
+    font-size: 16pt;
+    text-align: center;
+    
+}
+nav a {
+    display: block;
+    padding: 5px;
+    color: rgb(28, 21, 35);
+ }
+ nav a:hover {
+    color: white;
+    background-color: darkslategrey;
+    }
+    nav a.active {
+        background-color: #333;
+        color: #4e7970;
+    }
+.content {
+    display: flex;
+     gap: 20px;
+    align-items: flex-start;
+}
+.sidebar {
+    
+    width: 250px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.sidebar img {
+    width: 130%;
+    display: block;
+}
+.text {
+    margin: 5px;
+      flex: 1;
+    
+    font-size: 14pt;
+}
+.list {
+  list-style-image: url("star.jpg");
+  margin-left: 40px;
+  line-height: 1.8;
+}
+footer {
+    background-color: rgb(26, 17, 110);
+    padding:20px;
+    text-align: center;
+    border: thin solid black;
+    border-radius: 5px 5px;
+    box-shadow: 5px 5px;
+}
+.page2 {
+    display: flex;
+    object-fit: cover;
+
+}
+.page2 img {
+    
+    width: 300px;      
+    height: 300px;     
+    border: thin solid black;
+    box-shadow: 5px 5px rgb(53, 53, 97);
+}
+#food {
+    background-image: url(bc1.jpg);
+
+}
+#food header h1 {
+    background-color: rgb(95, 150, 116);
+}
+.parent {
+    display: flex;
+    padding: 5px;
+
+}
+.child {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card {
+    border: thin solid black;
+    box-shadow: 5px 5px black;
+    flex: 25%;
+    margin: 10px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+.card img {
+    width: 100%;          
+   border-radius: 5px 5px;
+   height: 250px;
+}
+.festival {
+    display: flex;
+    flex-direction:row-reverse;
+    margin: 0;
+    padding: 0;
+    
+}
+.sidebar {
+    width: 250px;
+}
+.caption {
+    font-size: 18pt;
+    
+}
+.table {
+    border: thin solid #D8CCB8;
+    border-collapse: separate;
+    caption-side: top;
+    margin: 50px;
+    height: 900px;
+    background-color: #FDF9EF;
+
+}
+.table th, .table td {
+    border: 3px solid #D8CCB8;
+    padding: 5px;
+    text-align: center;
+}
+ img {
+    border: thick solid black;
+ }
+.table thead tr { 
+    background-color:#2E5F56;
+    color: white;
+
+}
+.table tfoot tr {
+    background-color:  #1b1c25;
+    color: white;
+}
+.table tbody tr:nth-child(even) {
+    background-color:#FBF2E6;
+    
+    
+}
+.table tbody tr:nth-child(odd) {
+    background-color:#F6E9D7 ;
+    
+}
+.num {
+    vertical-align: middle;
+}
+.video {
+    border: thin solid black;
+    width: 100%;
+}
+.tour {
+    display: flex;
+    flex-wrap: wrap;
+     gap: 20px;
+    justify-content: center;
+    
+}
+.picutre {
+    flex: 1 1 30%;
+    width: 30%;
+}
+.tour img {
+    width: 100%;
+    height: 250px;   
+    object-fit: cover; 
+}
+figcaption {
+    text-align: center;
+}
+.india {
+    display: flex;
+    margin: 20px 0px 20px 0;
+    gap: 10px;
+}
+.india label {
+    text-align: right;
+    width: 150px;
+}
+.pakistan {
+    display: flex;
+    gap: 10px;
+    margin: 5px;
+     accent-color:#007bff;
+}
+.pakistan label {
+    display: flex;
+    align-items: center;
+  gap: 5px;
+}
+fieldset {
+    background-color: #4e7970;
+    border: thin solid black;
+    border-radius: 5px 5px;
+    box-shadow: 5px 5px black;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+legend {
+    border: thin solid rgb(9, 9, 9);
+    margin: 5px;
+    
+    padding: 10px;
+    border-radius: 5px ;
+    background-color: rgb(195, 193, 175);
+}
+.india input[type='submit'] {
+    background-color: rgb(85, 133, 165);
+    padding: 15px;
+    border-radius: 5px;
+    border: thin solid rgb(15, 15, 16);
+}
+.india input:not([type='submit']) {
+    background-color: #283a2f;
+    padding: 10px;
+     border-radius: 8px;
+     box-shadow: 5px 5px black;
+    font-style: italic;
+}
+.india input:not([type='submit']):focus,.india select, .india textarea {
+    padding: 10px;
+    border: thin solid black;
+    box-shadow: 5px 5px black;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(103, 130, 114);
+}
+.india input:not([type='submit']):focus,.india select:focus, .india textarea:focus {
+    background-color: white;
+}
+
+ @media only screen and (max-width:700px) {
+    .page2 {
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .page2 img {
+        width: 90%;
+        height:auto;
+         max-width: 320px;
+        display: block;
+       
+    }
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .festival {
+    flex-direction:column-reverse;
+  }
+  .sidebar {
+    width: 100%;
+
+  }
+  .table {
+    width: 100%;
+     margin: 0;
+    padding: 0;
+    
+  }
+  th, td {
+    padding: 3px;
+    font-size: 13px;
+  }
+  .content {
+    flex-direction: column-reverse;
+  }
+  .sidebar {
+    width: 300px;
+  }
+  .india, .pakistan {
+        flex-direction: column;
+    }
+    .india label, .form {
+        text-align: left;
+    }
+    .india input[type='submit'] {
+        width: 100%;
+        padding: 15px;
+        font-size: 20px;
+    }
+    
+ }

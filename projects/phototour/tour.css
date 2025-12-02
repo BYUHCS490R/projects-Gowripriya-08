@@ -2,7 +2,7 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: #222;
 
-  /* Background setup */
+  
   background-image: 
     url("india gate.jpg"),       /* Main background image */
     url("indiaflag.jpg");        /* Small decorative image */

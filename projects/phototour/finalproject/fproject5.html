@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="fproject.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Form</h1>
+    </header>
+    <nav>
+        <a href="finalproject.html">Home</a>
+    <a href="fproject1.html">Culture</a>
+    <a href="fproject2.html">Food</a>
+    <a href="fproject3.html">Festivals</a>
+    <a href="fproject4.html">Toursim</a>
+    <a href="fproject5.html" class="active">Contact</a>
+    </nav>
+    <main>
+        <h3>Fill your Details to learn more about India</h3>
+         <div id="message"></div>
+    
+        <form action="#" method="get" id="myform">
+            
+            <fieldset>
+                <Legend>Contact Form</Legend>
+            <div class="india">
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" id="firstname"></div>
+             <div class="india">
+             
+             
+            <label for="middlename">Middle Name</label>
+            <input type="text" name="middlename" id="middlename"></div>
+
+             <div class="india">
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname"></div>
+            <div class="india">
+                <label for="email"> Email</label>
+                <input type="email" name="email" id="email" placeholder="yourmail@gmail.com" required>
+            </div>
+            <div class="india">
+                <label for="phonenumber">Phone Number:</label>
+                
+                <select name="countrycode" id="countrycode">
+                    
+            <option value="">Select</option>
+            <option value="+1">+1 US</option>
+            <option value="+44">+44 UK</option>
+            <option value="+61">+61 AU</option>
+            <option value="+81">+81 JP</option>
+            <option value="+86">+86 CH</option>
+            <option value="+91">+91 IN</option>
+          </select>
+          <input type="tel" name="phonenumber" id="phonenumber" placeholder="(216)-233-4556">
+                
+            </div>
+            <div class="india">
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="dob" id="dob">
+            </div>
+            <div class="pakistan">
+                <div class="form"> Gender:</div>
+                
+                <label ><input type="radio" name="gender" value="male">Male</label>
+                <label ><input type="radio" name="gender" value="female">Female</label>
+                 <label ><input type="radio" name="gender" value="other">Other</label>
+            </div>
+            <div class="india">
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age">
+            </div>
+            <div class="pakistan">
+                <div class="form"> Have your ever visted india:</div>
+                
+
+                <label > <input type="radio" name="yes" value="yes">Yes</label>
+                 <label > <input type="radio" name="no" value="no">No</label></div>
+                  <div class="pakistan">
+                <div class="form"> Have you ever been to any of these places</div>
+                
+
+                <label > <input type="radio" name="yes" value="yes">Yes</label>
+                 <label > <input type="radio" name="no" value="no">No</label>
+                 <div class="india">
+                 <label >If yes, which one</label>
+                 <input type="text" name="place" id="place">
+                 </div>
+
+
+            </div>
+            <div class="india">
+        <label for="country">Country:</label>
+        <select name="country" id="country" >
+          <option value="">Select</option>
+          <option value="US">USA</option>
+          <option value="IN">India</option>
+          <option value="A">Asian</option>
+          <option value="SA">South America</option>
+          <option value="SA">South Africa</option>
+          <option value="UK">UK</option>
+        </select>
+      </div>
+          <div class="india">
+        <label for="state">State:</label>
+        <select id="state" name="state">
+          <option value="">Select</option>
+          <option>Hawaii</option>
+          <option>California</option>
+          <option>Texas</option>
+          <option>Florida</option>
+          <option>England</option>
+          <option>Scotland</option>
+          <option>Northern Ireland</option>
+          <option>Victoria</option>
+          <option>Queensland</option>
+          <option>New South Wales</option>
+          <option>Osaka</option>
+          <option>Tokyo</option>
+          <option>Kyoto</option>
+          <option>Beijing</option>
+          <option>Shanghai</option>
+          <option>Sichuan</option>
+          <option>Andhra Pradesh</option>
+          <option>Telangana</option>
+          <option>Karnataka</option>
+        </select>
+        </div>
+        <div class="india">
+            <label for="comment">Describe your expereince about this Webage</label>
+            <textarea name="comment" id="comment"></textarea>
+        </div>
+        <h4>Terms and Conditions</h4>
+        <p>Just want to make sure that fully secured and any frauds will be reported</p>
+        <div class="pakistan">
+            <div class="form"></div>
+            <label> <input type="checkbox" name="agree" id="agree"> I agree to the terms and conditions and love t orecieve update about india more</label>
+        </div>
+        <div class="india">
+            <div class="form"></div>
+                <input type="submit" value="submit">
+    
+        </div>
+        </fieldset>
+        
+        </form>
+    </main>
+    <footer>
+        &copy;Gowri Priya Mogali 2025
+    </footer>
+    <script src="form.js"></script>
+</body>
+</html>
