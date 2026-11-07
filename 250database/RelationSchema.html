@@ -69,8 +69,6 @@
             padding-left: 30px;
             color: #846c20;
         }
-
-       
     </style>
 </head>
 
@@ -83,19 +81,24 @@
 
     <main>
         <h1>Koa Ola Ranch Relational Schema</h1>
-        <p class="key-note">Underlined attributes are primary keys.</p>
+        <p class="key-note">
+            Underlined attributes are primary keys. Foreign keys are listed below each table.
+        </p>
 
         <div class="schema">
-            <p>Animal(<u>AnimalID</u>, Name, Breed, DateOfBirth, Age, Gender, Weight, AnimalType)</p>
+            <p>Animal(<u>AnimalID</u>, Name, Breed, DateOfBirth, Gender, Weight, AnimalType)</p>
 
             <p>HealthRecord(<u>HealthRecordID</u>, AnimalID, CheckupDate, MedicineGiven, Diagnosis, Treatment)</p>
             <p class="foreign-key">ForeignKey AnimalID reference Animal</p>
 
             <p>Programs(<u>ProgramID</u>, ProgramName, ProgramDate, Description)</p>
 
-            <p>Reservation(<u>ReservationID</u>, GuestID, ProgramID, ReservationDate, SessionDate)</p>
-            <p class="foreign-key">ForeignKey GuestID reference Guest</p>
+            <p>Program_Class(<u>ClassID</u>, ProgramID, ClassName, ClassDate)</p>
             <p class="foreign-key">ForeignKey ProgramID reference Programs</p>
+
+            <p>Reservation(<u>ReservationID</u>, GuestID, ClassID, ReservationDate)</p>
+            <p class="foreign-key">ForeignKey GuestID reference Guest</p>
+            <p class="foreign-key">ForeignKey ClassID reference Program_Class</p>
 
             <p>Patrons(<u>PatronID</u>, PatronName, Email, Phone)</p>
 
@@ -103,7 +106,8 @@
             <p class="foreign-key">ForeignKey PatronID reference Patrons</p>
             <p class="foreign-key">ForeignKey ProgramID reference Programs</p>
 
-            <p>Grants(<u>GrantID</u>, GrantName, FundingSource, Amount, DateReceived)</p>
+            <p>Grants(<u>GrantID</u>, ProgramID, GrantName, FundingSource, Amount, DateReceived)</p>
+            <p class="foreign-key">ForeignKey ProgramID reference Programs</p>
 
             <p>Guest(<u>GuestID</u>, FirstName, LastName, DateOfBirth, Phone)</p>
 
@@ -116,6 +120,9 @@
             <p>Associate(<u>AssociateID</u>, FirstName, LastName, HireDate, RetireDate, TerminationDate, Benefits)</p>
 
             <p>Promotion(<u>PromotionID</u>, AssociateID, PromotionDate)</p>
+            <p class="foreign-key">ForeignKey AssociateID reference Associate</p>
+
+            <p>SocialMedia(<u>PostID</u>, AssociateID, Platform, PostDate)</p>
             <p class="foreign-key">ForeignKey AssociateID reference Associate</p>
         </div>
     </main>
